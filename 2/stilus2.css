@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(44, 63, 173);
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  size: 12px;
+}
+
+main {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns:1fr;
+  grid-template-areas:
+  'h'
+  "n"
+  "t";
+  width: 80%;
+  background-color: rgba(255, 0, 0, 0.363);
+  gap: 10px;
+  margin: auto;
+}
+
+header {
+  grid-area: h;
+  margin: auto  ;
+}
+
+table{
+    grid-area: t    ;
+}
+
+table th{
+    text-align: left;
+}
+
+
+
+nav {
+  background-color: aqua;
+  grid-area: n;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  justify-content: center;
+  list-style: none;
+}
+nav li:hover {
+  background-color: rgb(0, 255, 0);
+  text-align: center;
+}
+
+nav a:hover {
+  color: red;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+footer {
+  grid-area: f;
+}
+
+@media only screen and (max-width: 600px) {
+  
+    
+  
+  
+}
